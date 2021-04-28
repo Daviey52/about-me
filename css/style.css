@@ -1,0 +1,46 @@
+*{
+  background-color: brown;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 90%;
+  line-height: 2.8;
+  align-content: center;
+}
+body{
+  width:960px;
+  font-family: Arial;
+  overflow: auto;
+  height: auto;
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+}
+h1{
+  text-transform: uppercase;
+  font-size: medium;
+  color: antiquewhite;
+}
+h2{
+  text-transform: capitalize;
+  font-size: small;
+  color: burlywood;
+  margin: 25px;
+}
+p{
+  width: 230;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  background-color: antiquewhite;
+}
+ul {
+  margin: 25px;
+  list-style: disc;
+}
+
+ol{
+  padding: 25px;
+  list-style-position: inside;
+  list-style: lower-roman;
+}
