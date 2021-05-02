@@ -4,11 +4,11 @@
   margin-top: auto;
   margin-bottom: auto;
   font-size: 90%;
-  line-height: 2.8;
+  line-height: 3.0;
   align-content: center;
+  width: 97%;
 }
 body{
-  width:960px;
   font-family: Arial;
   overflow: auto;
   height: auto;
@@ -34,13 +34,25 @@ p{
   padding: 5px;
   background-color: antiquewhite;
 }
-ul {
-  margin: 25px;
-  list-style: disc;
+ul li{
+  margin-left: 20px;
+  color: rgb(34, 29, 29);
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 25px;
+  text-shadow: black;
+  display: list-item;
+  text-align: center;
+}
+ol li{
+  margin-left: 20px;
+  color: rgb(34, 29, 29);
+  list-style-type: lower-roman;
+  list-style-position: inside;
+  padding: 25px;
+  text-shadow: black;
+  display: list-item;
+  text-align: center;
 }
 
-ol{
-  padding: 25px;
-  list-style-position: inside;
-  list-style: lower-roman;
-}
+
