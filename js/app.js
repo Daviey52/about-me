@@ -59,6 +59,7 @@ if (job === 'yes' || job === 'y'){
 }
 q4();
 //question 5
+function q5() {
 let live = prompt('Have I lived in four states in the last four years?').toLowerCase();
 if (live === 'yes' || live === 'y'){
   console.log('live:' + live);
@@ -69,6 +70,9 @@ if (live === 'yes' || live === 'y'){
 } else{
   alert('Please answer with either: yes ,no ,y,n');
 }
+}
+q5();
+
 alert('Thank you ' + username + ' for visiting my website');
 
 //question 6
