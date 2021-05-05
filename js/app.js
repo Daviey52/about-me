@@ -101,6 +101,7 @@ score++;
 }
 q6();
 //question 7
+function q7(){
 let correctanswer = false;
 let chance = 6;
 while (!correctanswer && chance){
@@ -124,3 +125,5 @@ while (!correctanswer && chance){
 
   chance--;
 }
+}
+q7();
