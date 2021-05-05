@@ -30,7 +30,8 @@ if (serve ==='no' || serve=== 'n') {
 }
 }
 q2();
-
+//question 3
+function q3() {
 let soccer = prompt('Do I like soccer more than NFL?').toLowerCase();
 if ( soccer === 'yes' || soccer === 'y'){
   console.log('soccer:' + soccer);
@@ -41,6 +42,8 @@ if ( soccer === 'yes' || soccer === 'y'){
 } else{
   alert ('Please answer with either:yes ,no ,y ,n');
 }
+}
+q3();
 //question 4
 let job = prompt('Was my previous job in Radiology?').toLowerCase();
 if (job === 'yes' || job === 'y'){
