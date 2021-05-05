@@ -45,6 +45,7 @@ if ( soccer === 'yes' || soccer === 'y'){
 }
 q3();
 //question 4
+function q4() {
 let job = prompt('Was my previous job in Radiology?').toLowerCase();
 if (job === 'yes' || job === 'y'){
   console.log('job:' + job);
@@ -55,6 +56,8 @@ if (job === 'yes' || job === 'y'){
 } else{
   alert('Please answer with either:yes , no , y ,n');
 }
+}
+q4();
 //question 5
 let live = prompt('Have I lived in four states in the last four years?').toLowerCase();
 if (live === 'yes' || live === 'y'){
