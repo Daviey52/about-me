@@ -3,7 +3,7 @@ let score = 0;
 let username = prompt('What is Your name').toUpperCase();
 alert('welcome '+ username +' !');
 //Question 1
-function q1 () {
+function q1() {
 let nameis = prompt('is my name David?').toLowerCase();
 if (nameis === 'yes' || nameis === 'y'){
   console.log('nameis:' + nameis);
@@ -15,8 +15,9 @@ if (nameis === 'yes' || nameis === 'y'){
   alert('please answer with either yes ,no, y, n');
 }
 }
-q1 ();
+q1();
 //question 2
+function q2() {
 let serve = prompt('Did I serve in the Navy').toLowerCase();
 if (serve ==='no' || serve=== 'n') {
   console.log('serve:'+ serve);
@@ -27,6 +28,9 @@ if (serve ==='no' || serve=== 'n') {
 } else{
   alert ('Please answer with either:yes, no, y, n');
 }
+}
+q2();
+
 let soccer = prompt('Do I like soccer more than NFL?').toLowerCase();
 if ( soccer === 'yes' || soccer === 'y'){
   console.log('soccer:' + soccer);
