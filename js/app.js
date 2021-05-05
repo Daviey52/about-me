@@ -76,6 +76,7 @@ q5();
 alert('Thank you ' + username + ' for visiting my website');
 
 //question 6
+function q6(){
 let attempts = 4;
 
 for (let i = 0; i < attempts; i++){
@@ -97,7 +98,8 @@ for (let i = 0; i < attempts; i++){
 }
 alert('The correct answer is 15');
 score++;
-
+}
+q6();
 //question 7
 let correctanswer = false;
 let chance = 6;
