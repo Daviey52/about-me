@@ -3,17 +3,21 @@ let score = 0;
 let username = prompt('What is Your name').toUpperCase();
 alert('welcome '+ username +' !');
 //Question 1
+function q1() {
 let nameis = prompt('is my name David?').toLowerCase();
 if (nameis === 'yes' || nameis === 'y'){
   console.log('nameis:' + nameis);
   alert('You are correct! My name is David');
-  score++;
+score++;
 } else if (nameis === 'no' || nameis === 'n' ){
   alert('That\'s not correct. My name is actually David');
 } else{
   alert('please answer with either yes ,no, y, n');
 }
+}
+q1();
 //question 2
+function q2() {
 let serve = prompt('Did I serve in the Navy').toLowerCase();
 if (serve ==='no' || serve=== 'n') {
   console.log('serve:'+ serve);
@@ -24,6 +28,10 @@ if (serve ==='no' || serve=== 'n') {
 } else{
   alert ('Please answer with either:yes, no, y, n');
 }
+}
+q2();
+//question 3
+function q3() {
 let soccer = prompt('Do I like soccer more than NFL?').toLowerCase();
 if ( soccer === 'yes' || soccer === 'y'){
   console.log('soccer:' + soccer);
@@ -34,31 +42,41 @@ if ( soccer === 'yes' || soccer === 'y'){
 } else{
   alert ('Please answer with either:yes ,no ,y ,n');
 }
+}
+q3();
 //question 4
+function q4() {
 let job = prompt('Was my previous job in Radiology?').toLowerCase();
 if (job === 'yes' || job === 'y'){
   console.log('job:' + job);
   alert('You are correct! I worked as a CT/XRAY technitian in the Airforce');
-  score++;
+score++;
 } else if (job === 'no' || job === 'n') {
   alert('That\'s not correct, I worked in Radiology for four years!');
 } else{
   alert('Please answer with either:yes , no , y ,n');
 }
+}
+q4();
 //question 5
+function q5() {
 let live = prompt('Have I lived in four states in the last four years?').toLowerCase();
 if (live === 'yes' || live === 'y'){
   console.log('live:' + live);
   alert('you are correct I have lived in TX,FL,GA and WA in the last four years');
-  score++;
+score++;
 } else if (live === 'no' || live === 'n') {
   alert('That\'s not correct. I have lived in TX, FL,GA, and WA in the last four years');
 } else{
   alert('Please answer with either: yes ,no ,y,n');
 }
+}
+q5();
+
 alert('Thank you ' + username + ' for visiting my website');
 
 //question 6
+function q6(){
 let attempts = 4;
 
 for (let i = 0; i < attempts; i++){
@@ -68,6 +86,7 @@ for (let i = 0; i < attempts; i++){
   if (guess === answer ){
     console.log('guess' + guess);
     alert('you are correct');
+score++;
     break;
   } else if (guess < answer) {
     alert('That is too low');
@@ -79,9 +98,11 @@ for (let i = 0; i < attempts; i++){
 
 }
 alert('The correct answer is 15');
-score++;
 
+}
+q6();
 //question 7
+function q7(){
 let correctanswer = false;
 let chance = 6;
 while (!correctanswer && chance){
@@ -91,17 +112,17 @@ while (!correctanswer && chance){
     if ( question === Answers[j]){
       console.log('question' + question);
       alert('You are correct');
-      score++;
       correctanswer =true;
-      break;
-
+      score++;
+      // break;
     }
   }
   if (chance === 1) {
     alert('Your guess are over. The correct answer: Washington, Texas ,Florida, California');
-    console.log(`Your score is ${score} out of 7`);
-    alert(`Your score is ${score} out of 7`);
+    // console.log(`Your score is ${score} out of 7`);
   }
-
   chance--;
 }
+alert(`Your score is ${score} out of 7`);
+}
+q7();
