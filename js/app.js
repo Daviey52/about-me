@@ -8,7 +8,7 @@ let nameis = prompt('is my name David?').toLowerCase();
 if (nameis === 'yes' || nameis === 'y'){
   console.log('nameis:' + nameis);
   alert('You are correct! My name is David');
-  score++;
+score++;
 } else if (nameis === 'no' || nameis === 'n' ){
   alert('That\'s not correct. My name is actually David');
 } else{
@@ -50,7 +50,7 @@ let job = prompt('Was my previous job in Radiology?').toLowerCase();
 if (job === 'yes' || job === 'y'){
   console.log('job:' + job);
   alert('You are correct! I worked as a CT/XRAY technitian in the Airforce');
-  score++;
+score++;
 } else if (job === 'no' || job === 'n') {
   alert('That\'s not correct, I worked in Radiology for four years!');
 } else{
@@ -64,7 +64,7 @@ let live = prompt('Have I lived in four states in the last four years?').toLower
 if (live === 'yes' || live === 'y'){
   console.log('live:' + live);
   alert('you are correct I have lived in TX,FL,GA and WA in the last four years');
-  score++;
+score++;
 } else if (live === 'no' || live === 'n') {
   alert('That\'s not correct. I have lived in TX, FL,GA, and WA in the last four years');
 } else{
@@ -86,6 +86,7 @@ for (let i = 0; i < attempts; i++){
   if (guess === answer ){
     console.log('guess' + guess);
     alert('you are correct');
+score++;
     break;
   } else if (guess < answer) {
     alert('That is too low');
@@ -97,7 +98,7 @@ for (let i = 0; i < attempts; i++){
 
 }
 alert('The correct answer is 15');
-score++;
+
 }
 q6();
 //question 7
@@ -111,19 +112,17 @@ while (!correctanswer && chance){
     if ( question === Answers[j]){
       console.log('question' + question);
       alert('You are correct');
-      score++;
       correctanswer =true;
-      break;
-
+      score++;
+      // break;
     }
   }
   if (chance === 1) {
     alert('Your guess are over. The correct answer: Washington, Texas ,Florida, California');
-    console.log(`Your score is ${score} out of 7`);
-    alert(`Your score is ${score} out of 7`);
+    // console.log(`Your score is ${score} out of 7`);
   }
-
   chance--;
 }
+alert(`Your score is ${score} out of 7`);
 }
 q7();
